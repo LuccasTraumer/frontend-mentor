@@ -11,13 +11,17 @@ html, body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 5%;
 }
 
 .content {
     padding: 5%;
-    border-radius: 8px;
-    width: 50%;
+    width: 35vw;
     margin: auto auto;
+}
+
+.top-side, .bottom-side, .bottom-side .right-side {
+    border-radius: 10px;
 }
 
 .content .top-side {
@@ -25,9 +29,8 @@ html, body {
     display: flex;
     flex-direction: column;
     text-align: start;
-    justify-content: space-between;
     color: #ccc;
-    padding: 2%;
+    padding: 5%;
 }
 
 .content .title {
@@ -58,13 +61,40 @@ html, body {
 
 .bottom-side .right-side {
     background-color: #55c1bf;
+    line-height: normal;
+}
+
+.description {
+    color:  #fff;
+    opacity: 50%;
+    font-weight: 400;
+}
+
+.price-value {
+    opacity: 100%;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left-side .text {
+    opacity: 80%;
+    padding-bottom: 5%;
+}
+
+.left-side {
+    justify-content: space-around;
+}
+
+.left-side button {
+    height: 20%;
 }
 
 .bottom-side .left-side, .bottom-side .right-side {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    text-align: center;
+    text-align: inherit;
     width: 100%;
     padding: 5%;
+    line-height: 1.5;
 }

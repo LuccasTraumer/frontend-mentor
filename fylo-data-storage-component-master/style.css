@@ -1,0 +1,59 @@
+html, body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #0c122c;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    margin-top: 40%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-top: 35%;
+    width: 100%;
+}
+
+.rounded {
+    width: 20vw;
+    border-radius: 5% 50px 5% 5%;
+    background-color: #1e2c69;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+.rounded section {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.rounded section div {
+    display: flex;
+    justify-content: center;
+    width: 4vw;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: #0c122c;
+}
+
+section div img {
+    align-self: center;
+    height: 50%;
+}
+
+.retangule {
+    width: 30vw;
+    border-radius: 5px;
+    background-color: #1d2b68;
+    padding: 2%;
+    
+}

@@ -33,7 +33,7 @@ html, body {
 .rounded {
     width: 20vw;
     height: 15vh;
-    border-radius: 5% 50px 5% 5%;
+    border-radius: 3% 80px 3% 3%;
     background-color: #1e2c69;
     padding: 2%;
     margin-right: 5%;
@@ -73,10 +73,10 @@ section div img {
     display: flex;
     justify-content: center;
     width: 10%;
-    height: 8%;
+    height: 7%;
     margin-left: 48%;
     margin-bottom: 10%;
-    border-radius: 15px 15px 0px 15px;
+    border-radius: 10px 10px 0px 10px;
     position: absolute;
     align-items: center;
     font-weight: 400;
@@ -133,4 +133,15 @@ section div img {
 
 .retangule label {
     font-weight: 700;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .background {
+        background-image: './images/bg-mobile.png';
+    }
+
+    .background img {
+        visibility: hidden;
+    }
 }

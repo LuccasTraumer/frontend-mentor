@@ -1,0 +1,195 @@
+html, body {
+    padding: 0%;
+    margin: 0%;
+    background-color: antiquewhite;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+    padding-left: 19%;
+    padding-top: 9%;
+    z-index: 2;
+    position: absolute;
+}
+
+.shadow {
+    margin-top: 5%;
+    width: 60%;
+    height: 35%;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    background: linear-gradient(114.61deg, rgba(196, 196, 196, 0.3) -19.56%, rgba(196, 196, 196, 0) 120%);
+    transform: rotate(22deg);
+}
+
+.sub-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.34;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px 50px 16px 16px;
+    display: block;
+    height: 386px;
+    width: 253px;
+    left: 218px;
+    top: 310px;
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    padding: 0 21px 0 21px;
+}
+
+.card title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.card .info {
+    line-height: 32px;
+    padding-top: 35%;
+}
+
+.info .marca {
+    line-height: 17px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #8F8F8F;
+}
+
+.info .data {
+    font-size: 26px;
+    line-height: 32px;
+    color: #29455F;
+}
+
+.info .rigth {
+    text-align: right;
+    justify-content: right;
+}
+
+.rigth .coin {
+    color: #808080;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.rigth .price {
+    color: #29455F;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.cores {
+    display: block;
+    width: 107px;
+    height: 45px;
+    color: #808080;
+}
+
+.cores label {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.cores .line-colors {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-colors div {
+    border-radius: 50%;
+}
+
+.cores .red {
+    background-color: #FF3838;
+    width: 18px;
+    height: 18px;
+}
+
+.cores .green {
+    background-color: #B5DB48;
+    width: 21px;
+    height: 21px;
+}
+
+.cores .blue {
+    background-color: #3864FF;
+    width: 18px;
+    height: 18px;
+}
+
+.tam {
+    padding-top: 2%;
+}
+
+.tam .title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #808080;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    width: 123px;
+    height: 47px;
+}
+
+.final {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes div {
+    width: 23px;
+    height: 23px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.sizes .active {
+    color: #fff;
+    background-color: #B5DB48;
+}
+
+.buy {
+    background-color: #B5DB48;
+    border-radius: 16px;
+    width: 49px;
+    height: 80px;
+    offset: 4px, 4px
+    rgba(0, 0, 0, 0.12);
+}
+
+.buy img {
+    height: 3.2vh;
+}
+
+.buy .seta, .buy .car {
+    display: flex;
+    justify-content: center;
+}

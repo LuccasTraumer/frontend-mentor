@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    margin: 10%;
+    .card {
+      background: #5f249c;
+      width: 25vw;
+      height: 30vh;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .data {
+        font-weight: 600;
+        font-size: 22px;
+      }
+
+      .top-side {
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 7% 1% 7%;
+        flex-direction: row;
+        height: 33%;
+        margin-top: 5%;
+
+        .chip {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-auto-rows: 33%;
+          img {
+            width: 50px;
+          }
+        }
+
+        .flag-card {
+          img {
+            width: 70px;
+          }
+        }
+      }
+
+      .middle {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .icon {
+          img {
+            width: 4vw;
+          }
+        }
+
+        .number {
+          margin-top: 5%;
+          text-align: center;
+          height: 20%;
+        }
+      }
+
+      .bottom-side {
+        width: 80%;
+        height: 15%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 7% 7% 7%;
+
+        .title {
+          color: #ccc;
+          font-size: 14px;
+          font-weight: 300;
+        }
+
+        .name {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .expire {
+
+          .date {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}

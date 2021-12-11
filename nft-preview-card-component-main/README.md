@@ -31,9 +31,8 @@ Users should be able to:
 
 ***In Mobile the results was:***
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+### Not deployed yet
+- ***Solution URL: [NOT DEPLOYED](#)***
 
 ## My process
 

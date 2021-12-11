@@ -114,3 +114,14 @@ hr {
 .card .creator span {
   font-weight: 600;
 }
+
+@media screen and (max-width: 375px) {
+  .content {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 80vw;
+  }
+}

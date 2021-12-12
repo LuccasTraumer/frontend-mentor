@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10vh;
+  position: relative;
+
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50px;
+    width: 10vw;
+    height: 5vh;
+    position: relative;
+    z-index: 1;
+    margin: 0 5%;
+    transition: 0.6s ease;
+  }
+
+.product {
+  position: absolute;
+  z-index: 0;
+
+  img {
+    width: 100vw;
+  }
+}
+}

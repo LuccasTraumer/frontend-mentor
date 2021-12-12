@@ -1,0 +1,34 @@
+<div class="content">
+  <div class="card">
+  <div class="image-content">
+    <img src="{{CONSTANTES.IMAGE_HEADER}}" alt="image header">
+  </div>
+
+  <nav class="description">
+    <header>
+      {{ this.nft.nameNft }}
+    </header>
+    {{ this.nft.description }}
+
+    <div class="value">
+        <span class="eth">
+          <img src="{{CONSTANTES.ICON_ETHERIUM}}" alt="icone etherium">
+          {{ this.nft.value }} ETH
+        </span>
+      <label class="time">
+        <img src="{{CONSTANTES.ICONE_TIMER}}">
+        {{ this.nft.releaseDate }} days left
+      </label>
+    </div>
+  </nav>
+
+  <hr>
+
+  <div class="creator">
+    <img src="{{CONSTANTES.IMAGE_AVATAR}}" alt="avatar">
+    <label>
+      Creation of <span>{{ this.nft.creator }}</span>
+    </label>
+  </div>
+</div>
+</div>

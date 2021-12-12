@@ -79,12 +79,12 @@
       align-items: center;
       padding: 5% 0;
       justify-content: space-around;
-      text-align: center;
 
       img {
-        width: 10%;
+        width: 2vw;
         border: #fff thin solid;
         border-radius: 50%;
+        margin-right: 5%;
       }
 
       span {
@@ -102,6 +102,12 @@
 
     .card {
       width: 80vw;
+
+      .creator {
+        img {
+          width: 12vw;
+        }
+      }
     }
   }
 }

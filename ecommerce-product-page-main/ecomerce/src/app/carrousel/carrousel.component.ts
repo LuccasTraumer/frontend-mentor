@@ -14,20 +14,10 @@ export class CarrouselComponent implements OnInit {
     this.CONSTANTES.IMAGE_PRODUCT_3, this.CONSTANTES.IMAGE_PRODUCT_4
   ];
 
-  private slides = document.getElementsByClassName("slides");
-
   constructor() {
-
-    console.log(this.slides);
   }
 
   ngOnInit(): void {
-    // @ts-ignore
-    this.slides[this.index].style.visibility = "visible";
-
-    setInterval(() => {
-      this.nextImage();
-    }, 4500);
   }
 
   nextImage() {

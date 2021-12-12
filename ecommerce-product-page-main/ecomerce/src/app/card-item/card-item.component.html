@@ -1,15 +1,12 @@
 <nav class="content">
-
   <div class="carrousel">
     <app-carrousel></app-carrousel>
-    <button><</button>
-    <button>></button>
   </div>
 
-  Sneaker Company
+  <section class="container">
+    <label class="up-title">Sneaker Company</label>
 
-  <section>
-    <header>
+    <header class="title">
       Fall Limited Edition Sneakers
     </header>
 
@@ -19,19 +16,33 @@
     </div>
 
     <div class="price">
-      <label class="value">$125.00</label>
-      <label class="discount">50%</label>
-      <label class="old-price">$250.00</label>
-    </div>
-
-    <div class="unit">
-      <div class="container">
-        <button>-</button>
-        <label>0</label>
-        <button>+</button>
+      <div class="value">
+        $125.00
+      </div>
+      <div class="discount">
+        50%
+      </div>
+      <div class="old-price">
+          $250.00
       </div>
     </div>
 
-    <button>Add to cart</button>
+    <div class="unit">
+
+        <div class="menus">
+          <img src="{{ CONSTANTES.ICON_MENUS }}" alt="">
+        </div>
+        <div class="value">
+          0
+        </div>
+        <div class="plus">
+          <img src="{{ CONSTANTES.ICON_PLUS }}" alt="">
+        </div>
+    </div>
+
+    <div class="add">
+      <img src="{{ CONSTANTES.ICON_CART }}" alt="">
+      Add to cart
+    </div>
   </section>
 </nav>

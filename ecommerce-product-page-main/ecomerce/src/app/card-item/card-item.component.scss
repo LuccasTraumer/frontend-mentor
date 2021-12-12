@@ -1,0 +1,90 @@
+.content {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: 0.8fr 1fr;
+
+  .carrousel {
+    height: 20vh;
+  }
+
+  .container {
+    padding: 5%;
+
+    .up-title {
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: var(--orange);
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 1.7rem;
+    }
+
+    .description {
+      color: var(--dark-grayish-blue);
+    }
+
+    .price {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr 1fr;
+      align-items: center;
+
+      .value {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .discount {
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        border-radius: 5px;
+        background: var(--pale-orange);
+        width: 40%;
+        color: var(--orange);
+        height: 100%;
+      }
+
+      .old-price {
+        color: var(--dark-grayish-blue);
+        text-decoration: line-through;
+        text-align: end;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .unit {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    background: var(--light-grayish-blue);
+    border-radius: 5px;
+    height: 5vh;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--orange);
+    color: var(--white);
+    height: 5vh;
+    border-radius: 5px;
+    font-weight: 700;
+
+    img {
+      padding-right: 5%;
+    }
+  }
+
+  .container > * {
+    margin-bottom: 5%;
+  }
+}

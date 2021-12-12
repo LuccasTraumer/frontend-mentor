@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Constantes} from "../../assets/constantes";
 
 @Component({
   selector: 'app-card-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-item.component.scss']
 })
 export class CardItemComponent implements OnInit {
-
+  public readonly  CONSTANTES = Constantes;
   constructor() { }
 
   ngOnInit(): void {

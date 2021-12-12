@@ -31,8 +31,7 @@ Users should be able to:
 
 ***In Mobile the results was:***
 ### Links
-### Not deployed yet
-- ***Solution URL: [NOT DEPLOYED](#)***
+- **Solution URL: [PAGE](https://61b54d81727430a92f2fc569--mystifying-elion-40077a.netlify.app/)**
 
 ## My process
 

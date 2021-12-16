@@ -4,26 +4,25 @@
   </div>
 
   <section class="container">
-    <label class="up-title">Sneaker Company</label>
+    <label class="up-title">{{ cardItem.company }}</label>
 
     <header class="title">
-      Fall Limited Edition Sneakers
+      {{ cardItem.productName }}
     </header>
 
     <div class="description">
-      These low-profile sneakers are your perfect casual wear companion. Featuring a
-      durable rubber outer sole, they’ll withstand everything the weather can offer.
+      {{ cardItem.description }}
     </div>
 
     <div class="price">
       <div class="value">
-        $125.00
+        {{ cardItem.price | currency }}
       </div>
-      <div class="discount">
-        50%
+      <div class="discount" *ngIf="cardItem.descount !== null || cardItem.descount !== 0">
+        {{ cardItem.descount }}%
       </div>
-      <div class="old-price">
-          $250.00
+      <div class="old-price" *ngIf="cardItem.oldPrice !== null || cardItem.oldPrice !== 0">
+        {{ cardItem.oldPrice | currency }}
       </div>
     </div>
 

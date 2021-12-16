@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-hamburguer-menu',
@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hamburguer-menu.component.scss']
 })
 export class HamburguerMenuComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

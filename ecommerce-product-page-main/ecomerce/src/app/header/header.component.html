@@ -1,7 +1,10 @@
-<nav>
+<nav class="mobile">
   <div class="left">
     <div class="menu" (click)="changeHamburguerMenu()">
       <img src="{{ CONSTANTES.ICON_HAMBURGUER_MENU }}" alt="menu">
+      <div class="cont" [ngClass]="{ 'show-hamburguer-menu' : menuIsOpen}">
+        <app-hamburguer-menu></app-hamburguer-menu>
+      </div>
     </div>
 
     <div class="logo">
@@ -18,4 +21,8 @@
       <img src="{{ CONSTANTES.IMAGE_AVATAR }}" alt="profile">
     </div>
   </div>
+</nav>
+
+<nav class="deskotop">
+
 </nav>

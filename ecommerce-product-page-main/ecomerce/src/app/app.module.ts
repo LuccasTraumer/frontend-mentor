@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.component';
 import { CardItemComponent } from './card-item/card-item.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,16 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

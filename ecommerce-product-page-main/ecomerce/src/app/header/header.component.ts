@@ -8,8 +8,8 @@ import { Constantes } from "../../assets/constantes";
 })
 export class HeaderComponent implements OnInit {
   public readonly CONSTANTES = Constantes;
-
-  private hamburguerMenuIsShowing: boolean = false;
+  menuIsOpen: boolean =  false;
+  public hamburguerMenuIsShowing: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +20,8 @@ export class HeaderComponent implements OnInit {
   }
 
   changeHamburguerMenu() {
+    this.menuIsOpen = !this.menuIsOpen;
+
     this.hamburguerMenuIsShowing = !this.hamburguerMenuIsShowing;
   }
 }

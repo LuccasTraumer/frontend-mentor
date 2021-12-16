@@ -34,3 +34,35 @@ nav {
     }
   }
 }
+@media screen and (max-width: 426px){
+  .mobile {
+    visibility: visible;
+
+    .cont {
+      background: var(--white);
+      position: absolute;
+      z-index: 2;
+      overflow-y: hidden;
+      max-height: 100vh;
+      max-width: 45vw;
+
+      width: 40vw;
+      height: 100vh;
+    }
+
+  }
+
+  .deskotop {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 427px){
+  .mobile {
+    visibility: hidden;
+  }
+
+  .deskotop {
+    visibility: visible;
+  }
+}

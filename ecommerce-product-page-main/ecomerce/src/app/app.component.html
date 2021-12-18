@@ -1,11 +1,24 @@
 <section class="content">
   <header>
-    <app-header [dataCart]="dataCartItens" (isShowCart)="showingCart($event)"></app-header>
+    <app-header
+      [dataCart]="dataCartItens"
+      (isShowCart)="showingCart($event)"
+    >
+    </app-header>
   </header>
 
   <nav>
-    <app-card-item (itensCart)="getItensCart($event)"></app-card-item>
-    <app-modal-cart (clearCart)="clearCart($event)" [dataCart]="dataCartItens" *ngIf="cartShowing"></app-modal-cart>
+    <app-card-item
+      (itensCart)="getItensCart($event)"
+    >
+    </app-card-item>
+    <app-modal-cart
+      class="cont-cart"
+      [ngClass]="{ 'show-cart' : cartShowing}"
+      (clearCart)="clearCart($event)"
+      [dataCart]="dataCartItens"
+      >
+    </app-modal-cart>
   </nav>
 </section>
 

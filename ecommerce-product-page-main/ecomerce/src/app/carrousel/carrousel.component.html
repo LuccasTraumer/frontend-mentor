@@ -4,7 +4,15 @@
   </div>
   <div class="product">
     <div class="slides fade">
-      <img src="{{ showImageProduct() }}" alt="image">
+<!--      <img src="{{ showImageProduct() }}" alt="image">-->
+      <img
+        *ngFor="let image of images;
+        let index = index"
+        id="{{ index }}"
+        src="{{ image }}"
+        class=""
+        [ngClass]="image === showImageProduct() ? 'active' : 'no-show'"
+      >
     </div>
   </div>
   <div class="action next" (click)="nextImage()">

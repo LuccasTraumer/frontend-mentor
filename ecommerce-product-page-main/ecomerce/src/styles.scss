@@ -27,3 +27,15 @@
   left: 0;
   transition-timing-function: ease-in-out;
 }
+
+.cont-cart {
+  top: -60%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  width: 50vw;
+}
+
+.show-cart {
+  top: 0;
+  transition-timing-function: ease-in-out;
+}

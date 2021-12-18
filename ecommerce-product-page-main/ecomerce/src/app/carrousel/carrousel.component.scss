@@ -23,8 +23,27 @@
   position: absolute;
   z-index: 0;
 
-  img {
-    width: 100vw;
+  .slides {
+    display: flex;
+
+
+    img {
+      width: 100vw;
+    }
   }
+
 }
+}
+
+.active {
+  right: 0;
+  transition-timing-function: ease-in-out;
+  display: block;
+}
+
+.no-show {
+  right: -60%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  display: none;
 }

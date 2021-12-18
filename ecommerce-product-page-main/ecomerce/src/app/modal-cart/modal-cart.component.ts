@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, Output, SimpleChanges} from '@angular/core';
 import {Constantes} from "../../assets/constantes";
 
 @Component({
@@ -6,7 +6,7 @@ import {Constantes} from "../../assets/constantes";
   templateUrl: './modal-cart.component.html',
   styleUrls: ['./modal-cart.component.scss']
 })
-export class ModalCartComponent implements OnInit {
+export class ModalCartComponent implements OnChanges {
   public readonly CONSTANTES = Constantes;
 
   @Input()
@@ -21,7 +21,7 @@ export class ModalCartComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit(): void {
+  ngOnChanges(changes: SimpleChanges): void {
     if (this.dataCart) {
       this.itemCart = new Item();
       this.itemCart.quantityItem = this.dataCart.numItens;
@@ -30,12 +30,14 @@ export class ModalCartComponent implements OnInit {
       this.itemCart.description = JSON.parse(this.dataCart.item).description;
       console.log(JSON.parse(this.dataCart.item).imagePath);
     }
+    console.log(this.dataCart.numItens);
   }
 
   cleanCart() {
     this.itemCart = new Item();
     this.clearCart.emit(true);
   }
+
 }
 
 export class Item {

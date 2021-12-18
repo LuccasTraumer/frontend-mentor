@@ -1,7 +1,8 @@
 <nav class="mobile">
   <div class="left">
     <div class="menu" (click)="changeHamburguerMenu()">
-      <img src="{{ CONSTANTES.ICON_HAMBURGUER_MENU }}" alt="menu">
+      <img [hidden]="showHamburguerMenu()" src="{{ CONSTANTES.ICON_HAMBURGUER_MENU }}" alt="menu">
+      <img [hidden]="!showHamburguerMenu()" src="{{ CONSTANTES.ICON_CLOSE_MENU_HAMBURGUER }}" alt="menu">
       <div class="cont" [ngClass]="{ 'show-hamburguer-menu' : menuIsOpen}">
         <app-hamburguer-menu></app-hamburguer-menu>
       </div>
@@ -13,7 +14,10 @@
   </div>
 
   <div class="right">
-    <div class="bag">
+    <div class="bag" (click)="showCart()">
+      <div class="info-cart" *ngIf="dataCart">
+        <label *ngIf="dataCart.numItens !== 0"> {{ dataCart.numItens }} </label>
+      </div>
       <img src="{{ CONSTANTES.ICON_CART }}" alt="bag">
     </div>
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Constantes} from "../../assets/constantes";
 
 @Component({
@@ -9,6 +9,11 @@ import {Constantes} from "../../assets/constantes";
 export class CardItemComponent implements OnInit {
   public readonly  CONSTANTES = Constantes;
   public cardItem: CardItem = new CardItem();
+  private numItens = 0;
+
+  @Output()
+  itensCart = new EventEmitter<any>();
+
   constructor() {
     this.cardItem.company = 'Sneaker Company';
     this.cardItem.productName = 'Fall Limited Edition Sneakers';
@@ -17,13 +22,36 @@ export class CardItemComponent implements OnInit {
     this.cardItem.price = 125.00;
     this.cardItem.descount = 50;
     this.cardItem.oldPrice = 250.00;
+    this.cardItem.imagePath = Constantes.IMAGE_PRODUCT_1;
   }
 
   ngOnInit(): void {
   }
+
+  addItem() {
+    this.numItens++;
+  }
+
+  addToCart() {
+    this.itensCart.emit({
+      numItens: this.numItens,
+      item: JSON.stringify(this.cardItem)
+    });
+  }
+
+  removeItem() {
+    this.numItens--;
+    if (this.numItens < 0)
+      this.numItens = 0;
+  }
+
+  getNumItens() {
+    return this.numItens;
+  }
 }
 
 export class CardItem {
+  public imagePath: string = '';
   public company: string = '';
   public productName: string = '';
   public description: string = '';

@@ -4,6 +4,11 @@
   width: 100vw;
   grid-template-rows: 0.8fr 1fr;
 
+  app-card-item {
+    padding-top: 10%;
+    z-index: 3;
+  }
+
   .carrousel {
     height: 20vh;
   }

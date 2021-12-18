@@ -1,6 +1,14 @@
-<app-header></app-header>
+<section class="content">
+  <header>
+    <app-header [dataCart]="dataCartItens" (isShowCart)="showingCart($event)"></app-header>
+  </header>
 
-<app-card-item></app-card-item>
+  <nav>
+    <app-card-item (itensCart)="getItensCart($event)"></app-card-item>
+    <app-modal-cart (clearCart)="clearCart($event)" [dataCart]="dataCartItens" *ngIf="cartShowing"></app-modal-cart>
+  </nav>
+</section>
+
 
 <!--<div class="attribution">-->
 <!--  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->

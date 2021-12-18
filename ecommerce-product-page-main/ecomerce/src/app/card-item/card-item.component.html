@@ -28,18 +28,18 @@
 
     <div class="unit">
 
-        <div class="menus">
+        <div class="menus" (click)="removeItem()">
           <img src="{{ CONSTANTES.ICON_MENUS }}" alt="">
         </div>
         <div class="value">
-          0
+          {{ getNumItens() }}
         </div>
-        <div class="plus">
+        <div class="plus" (click)="addItem()">
           <img src="{{ CONSTANTES.ICON_PLUS }}" alt="">
         </div>
     </div>
 
-    <div class="add">
+    <div class="add" (click)="addToCart()">
       <img src="{{ CONSTANTES.ICON_CART }}" alt="">
       Add to cart
     </div>

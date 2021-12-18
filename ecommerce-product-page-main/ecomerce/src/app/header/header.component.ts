@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { Constantes } from "../../assets/constantes";
 
 @Component({
@@ -7,9 +7,19 @@ import { Constantes } from "../../assets/constantes";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @Output()
+  isShowCart = new EventEmitter<boolean>();
+
+  @Input()
+  dataCart: any;
+
+  private cartIsShowing: boolean = false;
+
   public readonly CONSTANTES = Constantes;
   menuIsOpen: boolean =  false;
   public hamburguerMenuIsShowing: boolean = false;
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,7 +31,11 @@ export class HeaderComponent implements OnInit {
 
   changeHamburguerMenu() {
     this.menuIsOpen = !this.menuIsOpen;
-
     this.hamburguerMenuIsShowing = !this.hamburguerMenuIsShowing;
+  }
+
+  showCart() {
+    this.cartIsShowing = !this.cartIsShowing;
+    return this.isShowCart.emit(this.cartIsShowing);
   }
 }

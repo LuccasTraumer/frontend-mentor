@@ -1,0 +1,30 @@
+<div class="content">
+  <div class="header">
+    Cart
+  </div>
+  <hr>
+  <div class="action-info" *ngIf="itemCart !== undefined && itemCart.numItens !== 0; else empty">
+    <div class="item">
+      <div class="image">
+        <img src="{{ itemCart.imagePath }}" alt="">
+      </div>
+      <div class="data">
+        {{ itemCart.description.substring(0, 50) }}
+        {{ itemCart.priceItem | currency }} x {{ itemCart.quantityItem }} <span> {{ itemCart.priceItem * itemCart.quantityItem | currency }} </span>
+      </div>
+      <div class="remove" (click)="cleanCart()">
+        <img src="{{ CONSTANTES.ICON_REMOVE }}" alt="">
+      </div>
+    </div>
+    <div class="button">
+      <div (click)="cleanCart()">
+        Checkout
+      </div>
+    </div>
+  </div>
+  <ng-template #empty>
+    <label class="empty">
+      Your cart is empty.
+    </label>
+  </ng-template>
+</div>

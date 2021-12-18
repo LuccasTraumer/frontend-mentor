@@ -8,6 +8,7 @@ import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.compo
 import { CardItemComponent } from './card-item/card-item.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import {CommonModule} from "@angular/common";
+import { ModalCartComponent } from './modal-cart/modal-cart.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,12 @@ import {CommonModule} from "@angular/common";
     HeaderComponent,
     HamburguerMenuComponent,
     CardItemComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    ModalCartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonModule,
-    CommonModule,
-    CommonModule,
     CommonModule,
     CommonModule,
     CommonModule,

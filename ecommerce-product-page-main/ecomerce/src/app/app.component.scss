@@ -1,4 +1,22 @@
-app-header {
-  position: absolute;
-  z-index: 2;
+.content {
+  overflow: hidden;
+  header {
+    app-header {
+      position: absolute;
+      z-index: 2;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+
+    app-modal-cart {
+      margin-top: 20%;
+      position: absolute;
+      z-index: 1;
+      height: 30vh;
+      width: 95vw;
+    }
+  }
 }

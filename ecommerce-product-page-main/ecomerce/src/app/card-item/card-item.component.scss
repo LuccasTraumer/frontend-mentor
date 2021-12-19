@@ -93,3 +93,57 @@
     margin-bottom: 5%;
   }
 }
+
+@media screen and (min-width: 427px)  {
+  .content {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+
+    app-card-item {
+      z-index: 0;
+    }
+
+    .carrousel {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      .price {
+        width: 35%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        flex-flow: wrap;
+
+        .value {
+          font-size: 2rem;
+        }
+
+        .old-price {
+          display: inherit;
+          align-items: center;
+          justify-content: start;
+        }
+      }
+
+      .actions {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+
+        .unit {
+          width: 80%;
+        }
+
+        .add {
+          width: 80%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

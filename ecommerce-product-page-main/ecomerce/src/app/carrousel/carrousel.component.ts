@@ -37,4 +37,8 @@ export class CarrouselComponent implements OnInit {
   showImageProduct() {
     return this.images[this.index];
   }
+
+  changeIndex(index: number) {
+    this.index = index;
+  }
 }

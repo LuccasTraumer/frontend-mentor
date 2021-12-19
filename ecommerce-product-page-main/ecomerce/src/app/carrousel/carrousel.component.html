@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content mobile" *ngIf="false">
   <div class="action preveius" (click)="preveiusImage()">
     <img src="{{ CONSTANTES.ICON_PREVEIUS }}" alt="preveius">
   </div>
@@ -18,4 +18,20 @@
   <div class="action next" (click)="nextImage()">
     <img src="{{ CONSTANTES.ICON_NEXT }}" alt="next">
   </div>
+</div>
+
+<div class="content desktop">
+  <div class="main-image">
+    <img src="{{ showImageProduct() }}" alt="">
+  </div>
+
+  <section class="images">
+    <img
+      *ngFor="let image of images;
+      let index = index"
+      src="{{ image }}"
+      alt="{{ index }}"
+      (click)="changeIndex(index)"
+    >
+  </section>
 </div>

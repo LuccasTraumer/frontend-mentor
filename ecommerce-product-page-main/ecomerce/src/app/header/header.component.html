@@ -1,4 +1,4 @@
-<nav class="mobile">
+<nav class="mobile" *ngIf="false">
   <div class="left">
     <div class="menu" (click)="changeHamburguerMenu()">
       <img [hidden]="showHamburguerMenu()" src="{{ CONSTANTES.ICON_HAMBURGUER_MENU }}" alt="menu">
@@ -29,30 +29,38 @@
 
 <nav class="desktop">
   <div class="content">
-    <div class="icon">
-      <img src="{{ CONSTANTES.IMAGE_LOGO }}" alt="">
+    <div class="left">
+
+      <div class="icon">
+        <img src="{{ CONSTANTES.IMAGE_LOGO }}" alt="">
+      </div>
+      <nav>
+        <article>
+          <ul class="navbar">
+            <li class="nav-item active">
+              <a class="nav-link"> Collections</a>
+              <div></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Men</a>
+              <div></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Women</a>
+              <div></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About</a>
+              <div></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact</a>
+              <div></div>
+            </li>
+          </ul>
+        </article>
+      </nav>
     </div>
-    <nav>
-      <article>
-        <ul class="navbar">
-          <li class="nav-item active">
-            <a class="nav-link"> Collections</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Men</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Women</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </article>
-    </nav>
 
     <div class="right">
       <div class="bag" (click)="showCart()">

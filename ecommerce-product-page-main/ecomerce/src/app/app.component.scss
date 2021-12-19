@@ -1,7 +1,14 @@
 .content {
   overflow: hidden;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+
   header {
     app-header {
+      width: 100%;
+      max-width: 80%;
       position: absolute;
       z-index: 2;
     }

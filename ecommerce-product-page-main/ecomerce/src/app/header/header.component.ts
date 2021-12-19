@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import { Constantes } from "../../assets/constantes";
 
 @Component({
@@ -6,9 +6,11 @@ import { Constantes } from "../../assets/constantes";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnChanges {
   @Output()
   isShowCart = new EventEmitter<boolean>();
+
+  private width = window.screen.width;
 
   @Input()
   dataCart: any;
@@ -37,5 +39,14 @@ export class HeaderComponent implements OnInit {
   showCart() {
     this.cartIsShowing = !this.cartIsShowing;
     return this.isShowCart.emit(this.cartIsShowing);
+  }
+
+  getWidth() {
+
+    console.log(this.width)
+    return this.width > 426;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
   }
 }

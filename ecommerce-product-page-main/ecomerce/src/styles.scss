@@ -17,7 +17,7 @@
 }
 
 .cont {
-  left: -60%;
+  left: -100%;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   height: 100vh;
@@ -29,10 +29,10 @@
 }
 
 .cont-cart {
-  top: -60%;
+  top: -100%;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
-  width: 50vw;
+  width: 50%;
 }
 
 .show-cart {

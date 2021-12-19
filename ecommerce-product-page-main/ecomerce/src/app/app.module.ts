@@ -27,6 +27,7 @@ import { ModalCartComponent } from './modal-cart/modal-cart.component';
     CommonModule,
     CommonModule,
     CommonModule,
+    CommonModule,
     CommonModule
   ],
   providers: [],

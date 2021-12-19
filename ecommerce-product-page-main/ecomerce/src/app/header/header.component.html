@@ -27,6 +27,44 @@
   </div>
 </nav>
 
-<nav class="deskotop">
+<nav class="desktop">
+  <div class="content">
+    <div class="icon">
+      <img src="{{ CONSTANTES.IMAGE_LOGO }}" alt="">
+    </div>
+    <nav>
+      <article>
+        <ul class="navbar">
+          <li class="nav-item active">
+            <a class="nav-link"> Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </article>
+    </nav>
 
+    <div class="right">
+      <div class="bag" (click)="showCart()">
+        <div class="info-cart" *ngIf="dataCart">
+          <label *ngIf="dataCart.numItens !== 0"> {{ dataCart.numItens }} </label>
+        </div>
+        <img src="{{ CONSTANTES.ICON_CART }}" alt="bag">
+      </div>
+
+      <div class="profile">
+        <img src="{{ CONSTANTES.IMAGE_AVATAR }}" alt="profile">
+      </div>
+    </div>
+  </div>
 </nav>

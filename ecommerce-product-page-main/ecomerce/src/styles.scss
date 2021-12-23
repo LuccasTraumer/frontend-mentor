@@ -29,10 +29,11 @@
 }
 
 .cont-cart {
-  top: -100%;
+  top: -150%;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   width: 50%;
+  overflow: hidden;
 }
 
 .show-cart {

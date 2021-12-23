@@ -1,4 +1,4 @@
-nav {
+.mobile {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -7,6 +7,8 @@ nav {
   background: var(--white);
   height: 8vh;
   width: 100%;
+  overflow: hidden;
+
 
   .left, .right {
     display: flex;

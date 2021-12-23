@@ -16,8 +16,12 @@
         >
       </div>
       <div class="data">
-        {{ itemCart.description.substring(0, 50) }}
-        {{ itemCart.priceItem | currency }} x {{ itemCart.quantityItem }} <span> {{ itemCart.priceItem * itemCart.quantityItem | currency }} </span>
+        <span class="description">
+          {{ itemCart.description.substring(0, 50) }}
+        </span>
+        <span class="value-data">
+          {{ itemCart.priceItem | currency }} x {{ itemCart.quantityItem }} <span> {{ itemCart.priceItem * itemCart.quantityItem | currency }} </span>
+        </span>
       </div>
       <div
         class="remove"

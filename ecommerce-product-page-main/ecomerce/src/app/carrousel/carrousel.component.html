@@ -1,37 +1,38 @@
-<div class="content mobile" *ngIf="false">
-  <div class="action preveius" (click)="preveiusImage()">
-    <img src="{{ CONSTANTES.ICON_PREVEIUS }}" alt="preveius">
-  </div>
-  <div class="product">
-    <div class="slides fade">
-<!--      <img src="{{ showImageProduct() }}" alt="image">-->
-      <img
-        *ngFor="let image of images;
-        let index = index"
-        id="{{ index }}"
-        src="{{ image }}"
-        class=""
-        [ngClass]="image === showImageProduct() ? 'active' : 'no-show'"
-      >
+<div class="content">
+  <div class="mobile">
+    <div class="action preveius" (click)="preveiusImage()">
+      <img src="{{ CONSTANTES.ICON_PREVEIUS }}" alt="preveius">
+    </div>
+    <div class="product">
+      <div class="slides fade">
+        <img
+          *ngFor="let image of images;
+          let index = index"
+          id="{{ index }}"
+          src="{{ image }}"
+          class=""
+          [ngClass]="image === showImageProduct() ? 'active' : 'no-show'"
+        >
+      </div>
+    </div>
+    <div class="action next" (click)="nextImage()">
+      <img src="{{ CONSTANTES.ICON_NEXT }}" alt="next">
     </div>
   </div>
-  <div class="action next" (click)="nextImage()">
-    <img src="{{ CONSTANTES.ICON_NEXT }}" alt="next">
-  </div>
-</div>
 
-<div class="content desktop">
-  <div class="main-image">
-    <img src="{{ showImageProduct() }}" alt="">
-  </div>
+  <div class="desktop">
+    <div class="main-image">
+      <img src="{{ showImageProduct() }}" alt="">
+    </div>
 
-  <section class="images">
-    <img
-      *ngFor="let image of images;
+    <section class="images">
+      <img
+        *ngFor="let image of images;
       let index = index"
-      src="{{ image }}"
-      alt="{{ index }}"
-      (click)="changeIndex(index)"
-    >
-  </section>
+        src="{{ image }}"
+        alt="{{ index }}"
+        (click)="changeIndex(index)"
+      >
+    </section>
+  </div>
 </div>

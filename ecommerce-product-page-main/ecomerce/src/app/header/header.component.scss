@@ -22,17 +22,6 @@
   .right {
     display: flex;
     justify-content: space-evenly;
-
-    .bag {
-      .info-cart {
-        color: var(--white);
-        font-weight: 700;
-        border-radius: 50px;
-        font-size: 0.8rem;
-        text-align: center;
-        background: var(--orange);
-      }
-    }
   }
 
   .logo {
@@ -45,6 +34,17 @@
     img {
       width: 8vw;
     }
+  }
+}
+
+.bag {
+  .info-cart {
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+    background: var(--orange);
   }
 }
 

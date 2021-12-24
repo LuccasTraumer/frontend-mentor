@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit, OnChanges {
 
   showCart() {
     this.cartIsShowing = !this.cartIsShowing;
+    console.log(this.dataCart.numItens);
     return this.isShowCart.emit(this.cartIsShowing);
   }
 

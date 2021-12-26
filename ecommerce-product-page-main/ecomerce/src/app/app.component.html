@@ -1,4 +1,4 @@
-<section class="content">
+<div class="content">
   <header>
     <app-header
       [dataCart]="dataCartItens"
@@ -7,7 +7,7 @@
     </app-header>
   </header>
 
-  <nav>
+  <main>
     <app-card-item
       (itensCart)="getItensCart($event)"
     >
@@ -19,8 +19,8 @@
       [dataCart]="dataCartItens"
       >
     </app-modal-cart>
-  </nav>
-</section>
+  </main>
+</div>
 
 
 <!--<div class="attribution">-->

@@ -1,48 +1,48 @@
-<nav class="content">
-  <div class="carrousel">
+<article class="content">
+  <section class="carrousel">
     <app-carrousel></app-carrousel>
-  </div>
+  </section>
 
   <section class="container">
-    <label class="up-title">{{ cardItem.company }}</label>
+    <h4 class="up-title">{{ cardItem.company }}</h4>
 
-    <header class="title">
+    <h2 class="title">
       {{ cardItem.productName }}
-    </header>
+    </h2>
 
-    <div class="description">
+    <p class="description">
       {{ cardItem.description }}
-    </div>
+    </p>
 
-    <div class="price">
-      <div class="value">
+    <aside class="price">
+      <label class="value">
         {{ cardItem.price | currency }}
-      </div>
-      <div class="discount" *ngIf="cardItem.descount !== null || cardItem.descount !== 0">
+      </label>
+      <label class="discount" *ngIf="cardItem.descount !== null || cardItem.descount !== 0">
         {{ cardItem.descount }}%
-      </div>
-      <div class="old-price" *ngIf="cardItem.oldPrice !== null || cardItem.oldPrice !== 0">
+      </label>
+      <label class="old-price" *ngIf="cardItem.oldPrice !== null || cardItem.oldPrice !== 0">
         {{ cardItem.oldPrice | currency }}
-      </div>
-    </div>
+      </label>
+    </aside>
 
     <div class="actions">
       <div class="unit">
-        <div class="menus" (click)="removeItem()">
+        <figure class="menus" (click)="removeItem()">
           <img src="{{ CONSTANTES.ICON_MENUS }}" alt="">
-        </div>
+        </figure>
         <div class="value">
           {{ getNumItens() }}
         </div>
-        <div class="plus" (click)="addItem()">
+        <figure class="plus" (click)="addItem()">
           <img src="{{ CONSTANTES.ICON_PLUS }}" alt="">
-        </div>
+        </figure>
       </div>
 
-      <div class="add" (click)="addToCart()">
+      <figure class="add" (click)="addToCart()">
         <img src="{{ CONSTANTES.ICON_CART }}" alt="">
         Add to cart
-      </div>
+      </figure>
     </div>
   </section>
-</nav>
+</article>

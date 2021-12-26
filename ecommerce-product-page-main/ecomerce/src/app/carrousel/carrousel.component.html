@@ -1,10 +1,10 @@
 <div class="content">
   <div class="mobile">
-    <div class="action preveius" (click)="preveiusImage()">
+    <figure class="action preveius" (click)="preveiusImage()">
       <img src="{{ CONSTANTES.ICON_PREVEIUS }}" alt="preveius">
-    </div>
+    </figure>
     <div class="product">
-      <div class="slides fade">
+      <figure class="slides fade">
         <img
           *ngFor="let image of images;
           let index = index"
@@ -13,11 +13,11 @@
           class=""
           [ngClass]="image === showImageProduct() ? 'active' : 'no-show'"
         >
-      </div>
+      </figure>
     </div>
-    <div class="action next" (click)="nextImage()">
+    <figure class="action next" (click)="nextImage()">
       <img src="{{ CONSTANTES.ICON_NEXT }}" alt="next">
-    </div>
+    </figure>
   </div>
 
   <div class="desktop">
@@ -25,7 +25,7 @@
       <img src="{{ showImageProduct() }}" alt="">
     </div>
 
-    <section class="images">
+    <figure class="images">
       <img
         *ngFor="let image of images;
         let index = index"
@@ -34,6 +34,6 @@
         (click)="changeIndex(index)"
         [ngClass]="getIndex() === index ? 'active-image' : ''"
       >
-    </section>
+    </figure>
   </div>
 </div>

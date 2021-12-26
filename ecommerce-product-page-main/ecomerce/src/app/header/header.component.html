@@ -14,16 +14,16 @@
   </div>
 
   <div class="right">
-    <div class="bag" (click)="showCart()">
-      <div class="info-cart" *ngIf="dataCart">
+    <figure class="bag" (click)="showCart()">
+      <span class="info-cart" *ngIf="dataCart">
         <label *ngIf="dataCart.numItens !== 0"> {{ dataCart.numItens }} </label>
-      </div>
+      </span>
       <img src="{{ CONSTANTES.ICON_CART }}" alt="bag">
-    </div>
+    </figure>
 
-    <div class="profile">
+    <figure class="profile">
       <img src="{{ CONSTANTES.IMAGE_AVATAR }}" alt="profile">
-    </div>
+    </figure>
   </div>
 </nav>
 
@@ -31,10 +31,10 @@
   <div class="content">
     <div class="left">
 
-      <div class="icon">
+      <figure class="icon">
         <img src="{{ CONSTANTES.IMAGE_LOGO }}" alt="">
-      </div>
-      <nav>
+      </figure>
+      <section>
         <article>
           <ul class="navbar">
             <li class="nav-item active">
@@ -59,7 +59,7 @@
             </li>
           </ul>
         </article>
-      </nav>
+      </section>
     </div>
 
     <div class="right">

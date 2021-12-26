@@ -15,9 +15,9 @@
 
   <div class="right">
     <figure class="bag" (click)="showCart()">
-      <span class="info-cart" *ngIf="dataCart">
+      <div class="info-cart" *ngIf="dataCart">
         <label *ngIf="dataCart.numItens !== 0"> {{ dataCart.numItens }} </label>
-      </span>
+      </div>
       <img src="{{ CONSTANTES.ICON_CART }}" alt="bag">
     </figure>
 

@@ -31,7 +31,6 @@ export class ModalCartComponent implements OnChanges {
       this.itemCart.description = 'Autumn Limited Edition';
       console.log(JSON.parse(this.dataCart.item).imagePath);
     }
-    console.log(this.dataCart.numItens);
   }
 
   cleanCart() {

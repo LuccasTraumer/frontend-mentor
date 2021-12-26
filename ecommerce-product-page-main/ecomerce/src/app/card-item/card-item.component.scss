@@ -94,8 +94,10 @@
 
     .container {
       padding: 5%;
-      margin-top: 10%;
+    }
 
+    .title {
+      padding-top: 5%;
     }
 
     .discount {
@@ -108,14 +110,14 @@
   }
 }
 
+// DESKTOP
 @media screen and (min-width: 427px)  {
   .content {
-    margin-top: 10%;
+    margin-top: 15%;
+    height: 100%;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
 
     app-card-item {
@@ -130,12 +132,25 @@
     }
 
     .container {
+      padding: 5% 0;
+      width: 70%;
+      padding: 5% 0;
+      width: 70%;
+      display: grid;
+      grid-template-rows: 0.1fr 0.1fr 0.11fr 0.1fr 0.1fr;
+
       .price {
-        width: 35%;
+        width: 50%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr);
         flex-flow: wrap;
+        padding-bottom: 5%;
+        height: 100%;
+
+        .discount {
+          height: 50%;
+        }
 
         .value {
           font-size: 2rem;
@@ -151,7 +166,8 @@
       .actions {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 0.5fr 1fr;
+        margin-top: 5%;
 
         .unit {
           width: 80%;

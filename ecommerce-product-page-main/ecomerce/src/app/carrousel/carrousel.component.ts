@@ -41,4 +41,8 @@ export class CarrouselComponent implements OnInit {
   changeIndex(index: number) {
     this.index = index;
   }
+
+  getIndex() {
+    return this.index;
+  }
 }

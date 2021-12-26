@@ -28,10 +28,11 @@
     <section class="images">
       <img
         *ngFor="let image of images;
-      let index = index"
+        let index = index"
         src="{{ image }}"
         alt="{{ index }}"
         (click)="changeIndex(index)"
+        [ngClass]="getIndex() === index ? 'active-image' : ''"
       >
     </section>
   </div>

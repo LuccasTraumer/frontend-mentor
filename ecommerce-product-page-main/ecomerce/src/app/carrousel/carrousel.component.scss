@@ -82,20 +82,22 @@
       display: flex;
 
       img {
-        width: 50%;
-        border-radius: 10%;
+        width: 55%;
+        border-radius: 5%;
       }
     }
 
     .images {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       width: 100%;
+      text-align: center;
 
       img {
-        width: 15%;
+        width: 12%;
         border-radius: 10%;
+        margin-right: 2%;
       }
 
       img:hover {
@@ -103,4 +105,10 @@
       }
     }
   }
+}
+
+.active-image {
+  opacity: 50%;
+  background-color: white;
+  border: var(--orange) solid 2px;
 }

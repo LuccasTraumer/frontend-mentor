@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {CardData} from "./models/card-data";
+import {Depoiment} from "./models/depoiment";
+import {Constantes} from "./utils/constantes";
 
 @Component({
   selector: 'app-root',
@@ -7,13 +9,19 @@ import {CardData} from "./models/card-data";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  public readonly CONSTANTES = Constantes;
+
   title = 'agency';
 
   // @ts-ignore
-  arrayData = Array<CardData>();
+  arrayDataPage = Array<CardData>();
+  arrayDepoiments = Array<Depoiment>();
+  arrayImageSection = Array<String>();
+
 
   constructor() {
-    this.arrayData = [
+    this.arrayDataPage = [
       {
         header: 'Transform your brand',
         description: 'We are a full-service creative agency specializing in helping brands grow fast.' +
@@ -21,8 +29,53 @@ export class AppComponent {
         textLink: 'Learn more',
         link: '#'
       },
-
+      {
+        header: 'Stand out to the right audience',
+        description: 'Using a collaborative formula of designers, researchers, photographers, videographers, ' +
+          'and copywriters, we’ll build and extend your brand in digital places.',
+        textLink: 'Learn more',
+        link: '#'
+      },
+      {
+        header: 'Graphic design',
+        description: 'Great design makes you memorable. We deliver artwork that underscores your brand message and' +
+          ' captures potential clients’ attention.',
+        image: this.CONSTANTES.BERRY
+      },
+      {
+        header: 'Photography',
+        description: 'Increase your credibility by getting the most stunning, high-quality photos that improve your business image.',
+        image: this.CONSTANTES.ORANGE
+      }
     ];
+
+    this.arrayDepoiments = [
+      {
+        image: this.CONSTANTES.CLIENT_1,
+        feedback: 'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
+        author: 'Emily R.',
+        job: 'Marketing Director'
+      },
+      {
+        image: this.CONSTANTES.CLIENT_3,
+        feedback: 'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
+        author: 'Thomas S.',
+        job: 'Chief Operating Officer'
+      },
+      {
+        image: this.CONSTANTES.CLIENT_2,
+        feedback: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
+        author: 'Jennie F.',
+        job: 'Business Owner'
+      }
+    ]
+
+    this.arrayImageSection = [
+      this.CONSTANTES.MILK,
+      this.CONSTANTES.ORANGE_GALERY,
+      this.CONSTANTES.CONE,
+      this.CONSTANTES.SUGAR,
+    ]
   }
 
 }

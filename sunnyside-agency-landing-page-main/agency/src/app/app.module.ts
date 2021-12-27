@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.component';
 import { CardComponent } from './card/card.component';
+import {CommonModule} from "@angular/common";
+import { DepoimentComponent } from './depoiment/depoiment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HamburguerMenuComponent,
-    CardComponent
+    CardComponent,
+    DepoimentComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        CommonModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

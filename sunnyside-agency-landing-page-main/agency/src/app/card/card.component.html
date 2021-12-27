@@ -12,16 +12,18 @@
   </a>
 </section>
 
-<section class="content" #cardImage>
-  <h3>
-    {{ dataCard.header }}
-  </h3>
+<ng-template #cardImage>
+  <section class="content">
+    <h3>
+      {{ dataCard.header }}
+    </h3>
 
-  <p>
-    {{ dataCard.description }}
-  </p>
+    <p>
+      {{ dataCard.description }}
+    </p>
 
-  <figure>
-    <img src="{{ dataCard.image }}" alt="">
-  </figure>
-</section>
+    <figure>
+      <img src="{{ dataCard.image }}" alt="">
+    </figure>
+  </section>
+</ng-template>

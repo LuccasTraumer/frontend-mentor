@@ -1,131 +1,48 @@
 <app-header></app-header>
 <main>
-  <section class="">
-    <h1>
-      Transform your brand
-    </h1>
-
-    <p>
-      We are a full-service creative agency specializing in helping brands grow fast.
-      Engage your clients through compelling visuals that do most of the marketing for you.
-    </p>
-
-    <a href="">
-      Learn more
-    </a>
-  </section>
+  <app-card
+    *ngFor="let card of arrayDataPage"
+    [dataCard]="card">
+  </app-card>
   <figure>
-    <img src="" alt="">
+    <img src="COPO_ROSA" alt="">
   </figure>
-  <section>
-    <h1>
-      Stand out to the right audience
-    </h1>
-
-    <p>
-      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
-
-    </p>
-    <a href="">
-      Learn more
-    </a>
-  </section>
-
-  <section>
-    <h1>
-      Graphic design
-    </h1>
-
-    <p>
-      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-    </p>
-
-    <figure>
-      <img src="CEREJA_IMAGE" alt="">
-    </figure>
-  </section>
-
-  <section>
-    <h1>
-      Photography
-    </h1>
-
-    <p>
-      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-    </p>
-
-    <figure>
-      <img src="LARANJA IMAGE" alt="">
-    </figure>
-  </section>
 
   <section>
     <h3>
       Client testimonials
     </h3>
 
-    <article>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <p>
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-      </p>
-      <p>
-        <strong>
-          Emily R.
-        </strong>
-      </p>
-      <p>
-        Marketing Director
-      </p>
-    </article>
-
-    <article>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <figure>
-        <img src="" alt="">
-      </figure>
-      <figure>
-        <img src="" alt="">
-      </figure>
-    </article>
-
-    <footer>
-      <nav>
-        <ul>
-          <li>
-            About
-          </li>
-          <li>
-            Services
-          </li>
-          <li>
-            Projects
-          </li>
-          <li>
-            Contact
-          </li>
-        </ul>
-      </nav>
-    </footer>
+    <app-depoiment
+      *ngFor="let depoiment of arrayDepoiments"
+      [depoiment]="depoiment">
+    </app-depoiment>
   </section>
 
+  <section>
+    <figure *ngFor="let image of arrayImageSection">
+      <img src="{{ image }}" alt="">
+    </figure>
+  </section>
 
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          About
+        </li>
+        <li>
+          Services
+        </li>
+        <li>
+          Projects
+        </li>
+        <li>
+          Contact
+        </li>
+      </ul>
+    </nav>
+  </footer>
 </main>
 
 <!--<div class="attribution">-->

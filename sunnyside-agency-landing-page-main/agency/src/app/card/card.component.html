@@ -1,0 +1,27 @@
+<section class="content no-image" *ngIf="dataCard.image === ''; else cardImage">
+  <h1>
+    {{ dataCard.header }}
+  </h1>
+
+  <p>
+    {{ dataCard.description }}
+  </p>
+
+  <a href="{{ dataCard.link }}">
+    {{ dataCard.textLink }}
+  </a>
+</section>
+
+<section class="content" #cardImage>
+  <h3>
+    {{ dataCard.header }}
+  </h3>
+
+  <p>
+    {{ dataCard.description }}
+  </p>
+
+  <figure>
+    <img src="{{ dataCard.image }}" alt="">
+  </figure>
+</section>

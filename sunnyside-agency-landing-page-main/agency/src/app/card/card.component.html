@@ -1,29 +1,48 @@
-<section class="content no-image" *ngIf="dataCard.image === ''; else cardImage">
-  <h1>
-    {{ dataCard.header }}
-  </h1>
+<section
+  class="content no-image"
+  *ngIf="dataCard.image === undefined || dataCard.image === '' || dataCard.isCard;
+  else cardImage"
+>
+  <figure *ngIf="dataCard.image !== undefined && dataCard.image !== ''">
+    <img src="{{ dataCard.image }}" alt="">
+  </figure>
 
-  <p>
-    {{ dataCard.description }}
-  </p>
-
-  <a href="{{ dataCard.link }}">
-    {{ dataCard.textLink }}
-  </a>
-</section>
-
-<ng-template #cardImage>
-  <section class="content">
-    <h3>
+  <section class="data">
+    <h1>
       {{ dataCard.header }}
-    </h3>
+    </h1>
 
     <p>
       {{ dataCard.description }}
     </p>
 
+    <div class="link">
+      <a href="{{ dataCard.link }}">
+        {{ dataCard.textLink }}
+      </a>
+      <div
+        [ngClass]="dataCard.header.toLocaleLowerCase().includes('transform') ?
+      'background-yellow' :
+      'background-pink'"
+      ></div>
+    </div>
+  </section>
+</section>
+
+<ng-template #cardImage>
+  <section class="content image">
     <figure>
       <img src="{{ dataCard.image }}" alt="">
     </figure>
+
+    <section class="data">
+      <h3>
+        {{ dataCard.header }}
+      </h3>
+
+      <p>
+        {{ dataCard.description }}
+      </p>
+    </section>
   </section>
 </ng-template>

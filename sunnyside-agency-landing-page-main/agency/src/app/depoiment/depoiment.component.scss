@@ -1,0 +1,44 @@
+.content {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  padding: 10% 5%;
+
+  figure {
+    img {
+      border-radius: 50%;
+      width: 50%;
+    }
+  }
+
+  p:nth-child(even) {
+    color: var(--very-dark-grayish-blue);
+  }
+
+  p:nth-child(n) {
+    padding: 5% 0;
+  }
+
+  .auth {
+    strong {
+      padding-top: 10%;
+      height: 100%;
+      font-weight: 900;
+      font-size: 1.2rem;
+      font-family: 'Fraunces', serif;
+    }
+  }
+
+  .feedback {
+    line-height: 1.6;
+  }
+
+  .job {
+    font-size: 0.8rem;
+    padding: 0 !important;
+   }
+}
+
+

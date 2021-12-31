@@ -4,5 +4,5 @@ export class CardData {
   textLink?: string = '';
   link?: string = '';
   image?: string = '';
-  sublimeColor?: string = '';
+  isCard?: boolean = false;
 }

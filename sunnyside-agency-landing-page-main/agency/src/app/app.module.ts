@@ -7,6 +7,7 @@ import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.compo
 import { CardComponent } from './card/card.component';
 import {CommonModule} from "@angular/common";
 import { DepoimentComponent } from './depoiment/depoiment.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DepoimentComponent } from './depoiment/depoiment.component';
     HeaderComponent,
     HamburguerMenuComponent,
     CardComponent,
-    DepoimentComponent
+    DepoimentComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule,

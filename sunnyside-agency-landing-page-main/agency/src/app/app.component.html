@@ -4,19 +4,17 @@
     *ngFor="let card of arrayDataPage"
     [dataCard]="card">
   </app-card>
-  <figure>
-    <img src="COPO_ROSA" alt="">
-  </figure>
 
-  <section>
+  <section class="container-depoiment">
     <h3>
       Client testimonials
     </h3>
-
-    <app-depoiment
-      *ngFor="let depoiment of arrayDepoiments"
-      [depoiment]="depoiment">
-    </app-depoiment>
+    <div class="depoiment">
+      <app-depoiment
+        *ngFor="let depoiment of arrayDepoiments"
+        [depoiment]="depoiment">
+      </app-depoiment>
+    </div>
   </section>
 
   <section class="images">
@@ -24,9 +22,8 @@
       <img src="{{ image }}" alt="">
     </figure>
   </section>
-
-  <app-footer></app-footer>
 </main>
+<app-footer></app-footer>
 
 <!--<div class="attribution">-->
 <!--  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.-->

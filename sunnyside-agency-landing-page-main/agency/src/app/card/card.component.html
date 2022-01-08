@@ -1,9 +1,14 @@
 <section
+  [ngClass]="dataCard.header.toLocaleLowerCase().includes('transform') ?
+      'invert' :
+      ''"
   class="content no-image"
   *ngIf="dataCard.image === undefined || dataCard.image === '' || dataCard.isCard;
   else cardImage"
 >
-  <figure *ngIf="dataCard.image !== undefined && dataCard.image !== ''">
+  <figure
+    *ngIf="dataCard.image !== undefined && dataCard.image !== ''"
+  >
     <img src="{{ dataCard.image }}" alt="">
   </figure>
 

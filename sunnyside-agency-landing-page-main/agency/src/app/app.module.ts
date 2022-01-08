@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
     imports: [
         BrowserModule,
+        CommonModule,
         CommonModule
     ],
   providers: [],

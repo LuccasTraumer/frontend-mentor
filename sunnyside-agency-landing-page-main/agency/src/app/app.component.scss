@@ -34,3 +34,21 @@ main {
     }
   }
 }
+
+@media screen and (min-width: 426px) {
+  main {
+    .container-depoiment {
+      padding: 5%;
+
+      .depoiment {
+        display: flex;
+      }
+    }
+
+    .images {
+      display: flex;
+      width: 100%;
+
+    }
+  }
+}

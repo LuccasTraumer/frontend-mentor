@@ -9,6 +9,15 @@
 
   figure {
     height: 100%;
+
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
+
     img {
       height: 100%;
       width: 100vw;
@@ -96,6 +105,10 @@
     height: 100%;
     width: 100%;
 
+    .desktop {
+      display: none;
+    }
+
     img {
       height: inherit;
       width: inherit;
@@ -130,14 +143,22 @@
   .no-image {
     display: flex;
     max-width: 100%;
-    padding: 0 0 5% 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     justify-content: space-between;
 
     figure {
-      width: 85%;
+      width: 83%;
       height: 100%;
+
+      .mobile {
+        display: none;
+      }
+
+      .desktop {
+        display: block;
+      }
 
       img {
         width: 100%;
@@ -170,6 +191,22 @@
           width: 10%;
           margin: 0;
         }
+      }
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+
+    .data {
+      width: 40%;
+      height: 20%;
+    }
+
+    figure {
+      .mobile {
+        display: none;
       }
     }
   }

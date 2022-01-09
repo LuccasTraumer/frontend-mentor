@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {CardData} from "./models/card-data";
 import {Depoiment} from "./models/depoiment";
 import {Constantes} from "./utils/constantes";
@@ -17,7 +17,10 @@ export class AppComponent {
   // @ts-ignore
   arrayDataPage = Array<CardData>();
   arrayDepoiments = Array<Depoiment>();
-  arrayImageSection = Array<String>();
+
+  arrayImageData = Array<CardData>();
+  arrayImageSectionMobile = Array<String>();
+  arrayImageSectionDesktop = Array<String>();
 
 
   constructor() {
@@ -28,7 +31,7 @@ export class AppComponent {
           'Engage your clients through compelling visuals that do most of the marketing for you.',
         textLink: 'Learn more',
         link: '#',
-        image: Constantes.EGG_IMAGE,
+        images: [Constantes.EGG_IMAGE_MOBILE, Constantes.EGG_IMAGE_DESKTOP],
         isCard: true
       },
       {
@@ -37,19 +40,22 @@ export class AppComponent {
           'and copywriters, we’ll build and extend your brand in digital places.',
         textLink: 'Learn more',
         link: '#',
-        image: Constantes.CUP_PINK,
+        images: [Constantes.CUP_PINK_MOBILE, Constantes.CUP_PINK_DESKTOP],
         isCard: true
-      },
+      }
+    ];
+
+    this.arrayImageData = [
       {
         header: 'Graphic design',
         description: 'Great design makes you memorable. We deliver artwork that underscores your brand message and' +
           ' captures potential clients’ attention.',
-        image: this.CONSTANTES.BERRY
+        images: [this.CONSTANTES.BERRY_MOBILE, this.CONSTANTES.BERRY_DESKTOP]
       },
       {
         header: 'Photography',
         description: 'Increase your credibility by getting the most stunning, high-quality photos that improve your business image.',
-        image: this.CONSTANTES.ORANGE
+        images: [this.CONSTANTES.ORANGE_MOBILE, this.CONSTANTES.ORANGE_DESKTOP]
       }
     ];
 
@@ -74,12 +80,19 @@ export class AppComponent {
       }
     ]
 
-    this.arrayImageSection = [
-      this.CONSTANTES.MILK,
-      this.CONSTANTES.ORANGE_GALERY,
-      this.CONSTANTES.CONE,
-      this.CONSTANTES.SUGAR,
-    ]
+    this.arrayImageSectionMobile = [
+      this.CONSTANTES.MILK_MOBILE,
+      this.CONSTANTES.ORANGE_GALERY_MOBILE,
+      this.CONSTANTES.CONE_MOBILE,
+      this.CONSTANTES.SUGAR_MOBILE,
+    ];
+
+    this.arrayImageSectionDesktop = [
+      this.CONSTANTES.MILK_DESKTOP,
+      this.CONSTANTES.ORANGE_GALERY_DESKTOP,
+      this.CONSTANTES.CONE_DESKTOP,
+      this.CONSTANTES.SUGAR_DESKTOP,
+    ];
   }
 
 }

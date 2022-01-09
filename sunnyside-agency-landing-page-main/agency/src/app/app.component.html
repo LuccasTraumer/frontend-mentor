@@ -1,9 +1,20 @@
 <app-header></app-header>
 <main>
-  <app-card
-    *ngFor="let card of arrayDataPage"
-    [dataCard]="card">
-  </app-card>
+  <div class="cards">
+    <div class="data">
+      <app-card
+        *ngFor="let card of arrayDataPage"
+        [dataCard]="card">
+      </app-card>
+    </div>
+
+    <div class="image">
+      <app-card
+        *ngFor="let card of arrayImageData"
+        [dataCard]="card">
+      </app-card>
+    </div>
+  </div>
 
   <section class="container-depoiment">
     <h3>
@@ -18,7 +29,17 @@
   </section>
 
   <section class="images">
-    <figure *ngFor="let image of arrayImageSection">
+    <figure
+      *ngFor="let image of arrayImageSectionMobile"
+      class="mobile"
+    >
+      <img src="{{ image }}" alt="">
+    </figure>
+
+    <figure
+      *ngFor="let image of arrayImageSectionDesktop"
+      class="desktop"
+    >
       <img src="{{ image }}" alt="">
     </figure>
   </section>

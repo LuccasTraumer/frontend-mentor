@@ -1,4 +1,12 @@
 main {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
@@ -37,6 +45,23 @@ main {
 
 @media screen and (min-width: 426px) {
   main {
+    .mobile {
+      display: none;
+    }
+
+    .desktop {
+      display: block;
+    }
+    .cards {
+      .data {
+
+      }
+
+      .image {
+        display: flex;
+      }
+    }
+
     .container-depoiment {
       padding: 5%;
 

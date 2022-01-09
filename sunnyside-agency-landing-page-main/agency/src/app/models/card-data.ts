@@ -3,6 +3,6 @@ export class CardData {
   description: string = '';
   textLink?: string = '';
   link?: string = '';
-  image?: string = '';
+  images: string[] = [];
   isCard?: boolean = false;
 }

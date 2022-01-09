@@ -1,14 +1,25 @@
 export class Constantes {
-  public static readonly HEADER_IMAGE = '../../assets/images/mobile/image-header.jpg';
-  public static readonly EGG_IMAGE = '../../assets/images/mobile/image-transform.jpg';
-  public static readonly CUP_PINK = '../../assets/images/mobile/image-stand-out.jpg';
-  public static readonly BERRY = '../../assets/images/mobile/image-graphic-design.jpg';
-  public static readonly ORANGE = '../../assets/images/mobile/image-photography.jpg';
-  public static readonly MILK = '../../assets/images/mobile/image-gallery-milkbottles.jpg';
-  public static readonly CONE = '../../assets/images/mobile/image-gallery-cone.jpg';
-  public static readonly ORANGE_GALERY = '../../assets/images/mobile/image-gallery-orange.jpg';
-  public static readonly SUGAR = '../../assets/images/mobile/image-gallery-sugar-cubes.jpg';
+  // mobile
+  public static readonly HEADER_IMAGE_MOBILE = '../../assets/images/mobile/image-header.jpg';
+  public static readonly EGG_IMAGE_MOBILE = '../../assets/images/mobile/image-transform.jpg';
+  public static readonly CUP_PINK_MOBILE = '../../assets/images/mobile/image-stand-out.jpg';
+  public static readonly BERRY_MOBILE = '../../assets/images/mobile/image-graphic-design.jpg';
+  public static readonly ORANGE_MOBILE = '../../assets/images/mobile/image-photography.jpg';
+  public static readonly MILK_MOBILE = '../../assets/images/mobile/image-gallery-milkbottles.jpg';
+  public static readonly CONE_MOBILE = '../../assets/images/mobile/image-gallery-cone.jpg';
+  public static readonly ORANGE_GALERY_MOBILE = '../../assets/images/mobile/image-gallery-orange.jpg';
+  public static readonly SUGAR_MOBILE = '../../assets/images/mobile/image-gallery-sugar-cubes.jpg';
 
+  //desktop
+  public static readonly HEADER_IMAGE_DESKTOP = '../../assets/images/desktop/image-header.jpg';
+  public static readonly EGG_IMAGE_DESKTOP = '../../assets/images/desktop/image-transform.jpg';
+  public static readonly CUP_PINK_DESKTOP = '../../assets/images/desktop/image-stand-out.jpg';
+  public static readonly BERRY_DESKTOP = '../../assets/images/desktop/image-graphic-design.jpg';
+  public static readonly ORANGE_DESKTOP = '../../assets/images/desktop/image-photography.jpg';
+  public static readonly MILK_DESKTOP = '../../assets/images/desktop/image-gallery-milkbottles.jpg';
+  public static readonly CONE_DESKTOP = '../../assets/images/desktop/image-gallery-cone.jpg';
+  public static readonly ORANGE_GALERY_DESKTOP = '../../assets/images/desktop/image-gallery-orange.jpg';
+  public static readonly SUGAR_DESKTOP = '../../assets/images/desktop/image-gallery-sugarcubes.jpg';
 
 
   public static readonly CLIENT_1 = '../../assets/images/image-emily.jpg';

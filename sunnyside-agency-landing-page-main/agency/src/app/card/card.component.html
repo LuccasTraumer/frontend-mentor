@@ -3,13 +3,25 @@
       'invert' :
       ''"
   class="content no-image"
-  *ngIf="dataCard.image === undefined || dataCard.image === '' || dataCard.isCard;
+  *ngIf="
+  dataCard.images === undefined ||
+  dataCard.images.length === 0 ||
+  (dataCard.images[0] === '' && dataCard.images[1] === '') ||
+  dataCard.isCard;
   else cardImage"
 >
   <figure
-    *ngIf="dataCard.image !== undefined && dataCard.image !== ''"
+    *ngIf="dataCard.images === undefined || (dataCard.images[0] !== '' && dataCard.images[1] !== '')"
   >
-    <img src="{{ dataCard.image }}" alt="">
+    <img
+      class="mobile"
+      src="{{ dataCard.images[0] }}"
+      alt="">
+
+    <img
+      class="desktop"
+      src="{{ dataCard.images[1] }}"
+      alt="">
   </figure>
 
   <section class="data">
@@ -37,7 +49,16 @@
 <ng-template #cardImage>
   <section class="content image">
     <figure>
-      <img src="{{ dataCard.image }}" alt="">
+      <img
+        src="{{ dataCard.images[0] }}"
+        alt=""
+        class="mobile"
+      >
+      <img
+        src="{{ dataCard.images[1] }}"
+        alt=""
+        class="destop"
+      >
     </figure>
 
     <section class="data">

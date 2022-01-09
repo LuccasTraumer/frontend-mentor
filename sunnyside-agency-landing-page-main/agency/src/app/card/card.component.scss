@@ -7,16 +7,16 @@
   height: 100%;
   align-self: center;
 
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
   figure {
     height: 100%;
-
-    .mobile {
-      display: block;
-    }
-
-    .desktop {
-      display: none;
-    }
 
     img {
       height: 100%;
@@ -30,7 +30,7 @@
     flex-flow: nowrap;
     justify-content: space-around;
     height: 90%;
-    padding: 5%;
+    padding: 10% 5%;
 
     h1 {
       font-size: 2rem;
@@ -44,6 +44,7 @@
       text-transform: uppercase;
       display: inherit;
       align-self: center;
+      padding-bottom: 15%;
 
       a {
         text-decoration: none;
@@ -140,6 +141,14 @@
 
 
 @media screen and (min-width: 426px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
   .no-image {
     display: flex;
     max-width: 100%;
@@ -151,14 +160,6 @@
     figure {
       width: 83%;
       height: 100%;
-
-      .mobile {
-        display: none;
-      }
-
-      .desktop {
-        display: block;
-      }
 
       img {
         width: 100%;
@@ -207,6 +208,10 @@
     figure {
       .mobile {
         display: none;
+      }
+
+      .desktop {
+        display: block;
       }
     }
   }

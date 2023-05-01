@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  font-family: "League Spartan", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  padding: 10% 0;
+}
+body .header {
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% auto;
+  width: 90%;
+}
+body .header__theme {
+  display: flex;
+}
+body .header__theme--title {
+  align-self: self-end;
+}
+body .header__theme__section-toggle--numbers {
+  display: flex;
+  width: inherit;
+  justify-content: space-around;
+}
+body .header__theme__section-toggle--toggle {
+  width: inherit;
+  height: 3vh;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+body .header__theme__section-toggle--toggle .active {
+  border-radius: 50%;
+  width: 3.8vw;
+  height: 1.8vh;
+  margin: 2% 5%;
+}
+body .container {
+  padding: 5%;
+  height: 100vh;
+  width: inherit;
+}
+body .container__result {
+  width: 90%;
+  height: 10vh;
+  margin: 5% auto;
+  padding: 0 5%;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+body .container__result--number {
+  background: none;
+}
+body .container__painel {
+  display: grid;
+  grid-template-areas: "btn-7 btn-8 btn-9 del" "btn-4 btn-5 btn-6 sum" "btn-1 btn-2 btn-3 btn-dash" "point btn-0 btn-bar mult" "reset reset equal equal";
+  gap: 2%;
+  height: 50%;
+  padding: 8%;
+  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .container__painel * {
+  font-size: 2rem;
+}
+body .container__painel input[type=button] {
+  width: auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+}
+body .container__painel--button--reset {
+  grid-area: reset;
+}
+body .container__painel--button--equal {
+  grid-area: equal;
+}
+body .container__painel--button--point {
+  grid-area: point;
+}
+body .container__painel--button--zero {
+  grid-area: btn-0;
+}
+body .container__painel--button--bar {
+  grid-area: btn-bar;
+}
+body .container__painel--button--mult {
+  grid-area: mult;
+}
+body .container__painel--button--one {
+  grid-area: btn-1;
+}
+body .container__painel--button--two {
+  grid-area: btn-2;
+}
+body .container__painel--button--three {
+  grid-area: btn-3;
+}
+body .container__painel--button--dash {
+  grid-area: btn-dash;
+}
+body .container__painel--button--four {
+  grid-area: btn-4;
+}
+body .container__painel--button--five {
+  grid-area: btn-5;
+}
+body .container__painel--button--six {
+  grid-area: btn-6;
+}
+body .container__painel--button--sum {
+  grid-area: sum;
+}
+body .container__painel--button--seven {
+  grid-area: btn-7;
+}
+body .container__painel--button--eight {
+  grid-area: btn-8;
+}
+body .container__painel--button--nine {
+  grid-area: btn-9;
+}
+body .container__painel--button--del {
+  grid-area: del;
+}
+
+body.primary {
+  background: hsl(222, 26%, 31%);
+  color: hsl(0, 0%, 100%);
+}
+body.primary .header__theme__section-toggle--toggle {
+  background: hsl(223, 31%, 20%);
+}
+body.primary .header__theme__section-toggle--toggle .active {
+  background: hsl(6, 63%, 50%);
+}
+body.primary .container__result {
+  background: hsl(224, 36%, 15%);
+}
+body.primary .container__painel {
+  background: hsl(223, 31%, 20%);
+}
+body.primary .container__painel input[type=button] {
+  background: hsl(30, 25%, 89%);
+  box-shadow: 0 4px hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+}
+body.primary .container__painel input[value=reset], body.primary .container__painel input[value=del] {
+  background: hsl(225, 21%, 49%);
+  box-shadow: 0 4px hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+body.primary .container__painel input[value="="] {
+  background: hsl(6, 63%, 50%);
+  box-shadow: 0 4px hsl(6, 70%, 34%);
+  color: hsl(0, 0%, 100%);
+}
+body.primary .container__painel--button--del {
+  background: hsl(225, 21%, 49%);
+  box-shadow: hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+body.primary .multi-radio-toggle {
+  background: hsl(223, 31%, 20%);
+}
+body.primary .multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: hsl(6, 63%, 50%);
+}
+
+body.secondary {
+  background: hsl(0, 0%, 90%);
+  color: hsl(0, 0%, 100%);
+}
+body.secondary .header__theme__section-toggle--toggle {
+  background: hsl(0, 5%, 81%);
+}
+body.secondary .header__theme__section-toggle--toggle .active {
+  background: hsl(25, 98%, 40%);
+}
+body.secondary .container__result {
+  background: hsl(0, 0%, 93%);
+}
+body.secondary .container__painel {
+  background: hsl(0, 5%, 81%);
+}
+body.secondary .container__painel input[type=button] {
+  background: hsl(45, 7%, 89%);
+  box-shadow: 0 4px hsl(35, 11%, 61%);
+  color: hsl(221, 14%, 31%);
+}
+body.secondary .container__painel input[value=reset], body.secondary .container__painel input[value=del] {
+  background: hsl(185, 42%, 37%);
+  box-shadow: 0 4px hsl(185, 58%, 25%);
+  color: hsl(0, 0%, 100%);
+}
+body.secondary .container__painel input[value="="] {
+  background: hsl(25, 98%, 40%);
+  box-shadow: 0 4px hsl(25, 99%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+body.secondary .container__painel--button--del {
+  background: hsl(185, 42%, 37%);
+  box-shadow: hsl(185, 58%, 25%);
+  color: hsl(0, 0%, 100%);
+}
+body.secondary .multi-radio-toggle {
+  background: hsl(0, 5%, 81%);
+}
+body.secondary .multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: hsl(25, 98%, 40%);
+}
+
+body.third {
+  background: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+body.third .header__theme__section-toggle--toggle {
+  background: hsl(223, 31%, 20%);
+}
+body.third .header__theme__section-toggle--toggle .active {
+  background: hsl(176, 100%, 44%);
+}
+body.third .container__result {
+  background: hsl(268, 71%, 12%);
+}
+body.third .container__painel {
+  background: hsl(268, 47%, 21%);
+}
+body.third .container__painel input[type=button] {
+  background: hsl(268, 71%, 12%);
+  box-shadow: 0 4px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+}
+body.third .container__painel input[value=reset], body.third .container__painel input[value=del] {
+  background: hsl(281, 89%, 26%);
+  box-shadow: 0 4px hsl(285, 91%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+body.third .container__painel input[value="="] {
+  background: hsl(176, 100%, 44%);
+  box-shadow: 0 4px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+body.third .container__painel--button--del {
+  background: hsl(281, 89%, 26%);
+  box-shadow: hsl(285, 91%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+body.third .multi-radio-toggle {
+  background: hsl(268, 71%, 12%);
+}
+body.third .multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: hsl(176, 100%, 44%);
+}
+
+.multi-radio-toggle {
+  position: relative;
+  padding: 0 !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 30px;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0);
+}
+
+.multi-radio-toggle--three {
+  width: 60px;
+}
+
+.multi-radio-toggle__label p {
+  display: block;
+  margin: 0;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.multi-radio-toggle__label {
+  position: absolute;
+  z-index: 99;
+}
+
+/* first pos */
+.multi-radio-toggle__label:nth-of-type(1) {
+  left: -55px;
+  width: 80px;
+  text-align: left;
+}
+
+/* center */
+.multi-radio-toggle--three .multi-radio-toggle__label:nth-of-type(2) {
+  text-align: center;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+/* last pos */
+.multi-radio-toggle--three .multi-radio-toggle__label:nth-of-type(3) {
+  right: -55px;
+  text-align: right;
+  width: 80px;
+}
+
+.multi-radio-toggle__label--align-bottom p {
+  display: block;
+  margin-top: 30px;
+}
+
+.multi-radio-toggle > * {
+  float: left;
+}
+
+.multi-radio-toggle input[type=radio] {
+  display: none;
+}
+
+.multi-radio-toggle__label {
+  height: 30px;
+  margin: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1;
+  text-align: center;
+  width: 70px;
+}
+
+.multi-radio-toggle__slide-bg {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -3px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
+  left: 5px;
+  top: 25%;
+}
+
+.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
+  left: 25px;
+  top: 25%;
+}
+
+.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg {
+  left: 40px;
+  top: 25%;
+}
+
+/*# sourceMappingURL=styles.css.map */

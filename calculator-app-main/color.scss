@@ -1,0 +1,72 @@
+//first-theme
+  //Themes Background
+  $main-background-first: hsl(222, 26%, 31%);
+  $toggle-background-first: hsl(223, 31%, 20%);
+  $screen-background-first: hsl(224, 36%, 15%);
+
+  // Keys Color
+
+  // DELETE E RESET
+  $key-background-del-res-first: hsl(225, 21%, 49%);
+  $key-shadow-del-res-first: hsl(224, 28%, 35%);
+  $color-del-res-first: hsl(0, 0%, 100%);
+
+  // EQUAL
+  $key-background-equal-first: hsl(6, 63%, 50%);
+  $key-shadow-equal-first: hsl(6, 70%, 34%);
+  $color-equal-first: $color-del-res-first;
+
+  $light-grayish-orange-key-background: hsl(30, 25%, 89%);
+  $grayish-orange-key-shadow: hsl(28, 16%, 65%);
+
+  // Text Color
+  $color-first: hsl(221, 14%, 31%);
+
+
+// second-theme
+  // Backgrounds
+  $main-background-second: hsl(0, 0%, 90%);
+  $toggle-background-second: hsl(0, 5%, 81%);
+  $screen-background-second: hsl(0, 0%, 93%);
+
+  // Keys
+
+  // DELETE E RESET
+  $key-background-del-res-second: hsl(185, 42%, 37%);
+  $key-shadow-del-res-second: hsl(185, 58%, 25%);
+  $color-del-reset-second: hsl(0, 0%, 100%);
+
+  // EQUAL
+  $key-background-equal-second: hsl(25, 98%, 40%);
+  $key-shadow-equal-second: hsl(25, 99%, 27%);
+  $color-equal-second: $color-del-reset-second;
+
+  $light-grayish-yellow-key-background: hsl(45, 7%, 89%);
+  $dark-grayish-orange-key-shadow: hsl(35, 11%, 61%);
+
+  // Text
+  $color-second: hsl(60, 10%, 19%);
+
+
+//third-theme
+  // Backgrounds
+  $main-background-third: hsl(268, 75%, 9%);
+  $very-dark-violet-third: hsl(268, 71%, 12%);
+
+  // Keys
+  // DELETE E RESET
+  $key-background-del-res-third: hsl(281, 89%, 26%);
+  $key-shadow-del-res-third: hsl(285, 91%, 52%);
+  $color-del-res-third: hsl(0, 0%, 100%);
+
+  // EQUAL
+  $background-equal-third: hsl(176, 100%, 44%);
+  $key-shadow-equal-third: hsl(177, 92%, 70%);
+  $color-equal-third: hsl(198, 20%, 13%);
+
+  $very-dark-violet-key-background: hsl(268, 47%, 21%);
+  $dark-magenta-key-shadow: hsl(290, 70%, 36%);
+
+  // Text
+  $color-third: hsl(52, 100%, 62%);
+

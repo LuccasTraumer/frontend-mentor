@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./color.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+<header class="header">
+  <p>calc</p>
+
+  <nav class="header__theme">
+    <p class="header__theme--title">theme</p>
+
+    <div class="header__theme__section-toggle">
+      <div class="multi-radio-toggle multi-radio-toggle--three">
+        <input onclick="changeClass()" type="radio" id="mt-first2" name="toggle_option2" checked>
+        <input onclick="changeClass()" type="radio" id="mt-second2" name="toggle_option2">
+        <input onclick="changeClass()" type="radio" id="mt-third2" name="toggle_option2">
+        <label onclick="changeClass()" for="mt-first2" class="multi-radio-toggle__label">
+          <p>Lions</p>
+        </label>
+        <label onclick="changeClass()" for="mt-second2" class="multi-radio-toggle__label multi-radio-toggle__label--align-bottom">
+          <p>Tigers</p>
+        </label>
+        <label onclick="changeClass()" for="mt-third2" class="multi-radio-toggle__label">
+          <p>Bears</p>
+        </label>
+        <div class="multi-radio-toggle__slide-bg"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <main class="container container-primary">
+
+
+    <div class="container__result">
+      <p class="container__result--number">100,00</p>
+    </div>
+
+    <div class="container__painel">
+      <input onclick="getValueButton(event)" value="reset" type="button" class="container__painel--button--reset">
+      <input onclick="getValueButton(event)" value="=" type="button" class="container__painel--button--equal">
+      <input onclick="getValueButton(event)" value="." type="button" class="container__painel--button--point">
+      <input onclick="getValueButton(event)" value="0" type="button" class="container__painel--button--zero">
+      <input onclick="getValueButton(event)" value="/" type="button" class="container__painel--button--bar">
+      <input onclick="getValueButton(event)" value="x" type="button" class="container__painel--button--mult">
+      <input onclick="getValueButton(event)" value="1" type="button" class="container__painel--button--one">
+      <input onclick="getValueButton(event)" value="2" type="button" class="container__painel--button--two">
+      <input onclick="getValueButton(event)" value="3" type="button" class="container__painel--button--three">
+      <input onclick="getValueButton(event)" value="-" type="button" class="container__painel--button--dash">
+      <input onclick="getValueButton(event)" value="4" type="button" class="container__painel--button--four">
+      <input onclick="getValueButton(event)" value="5" type="button" class="container__painel--button--five">
+      <input onclick="getValueButton(event)" value="6" type="button" class="container__painel--button--six">
+      <input onclick="getValueButton(event)" value="+" type="button" class="container__painel--button--sum">
+      <input onclick="getValueButton(event)" value="7" type="button" class="container__painel--button--seven">
+      <input onclick="getValueButton(event)" value="8" type="button" class="container__painel--button--eight">
+      <input onclick="getValueButton(event)" value="9" type="button" class="container__painel--button--nine">
+      <input onclick="getValueButton(event)" value="del" type="button" class="container__painel--button--del">
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+  
+  <div class="attribution" style="display: none; visibility: hidden">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lucas Jesus</a>.
+  </div>
+</body>
+</html>
